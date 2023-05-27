@@ -131,15 +131,17 @@ dd01a35078 Update CHANGELOG.md
 
 ```
 ╭─shaman@Barton ~/git/terraform ‹main●› 
-╰─$ git grep -n 'func providerSource'
+╰─$ git log -S 'func providerSource'
 
-provider_source.go:26:func providerSource(configs []*cliconfig.ProviderInstallation, services *disco.Disco) (getproviders.Source, tfdiags.Diagnostics) {
-provider_source.go:190:func providerSourceForCLIConfigLocation(loc cliconfig.ProviderInstallationLocation, services *disco.Disco) (getproviders.Source, tfdiags.Diagnostics) {
-(END)
 
 ```
 
-![Название скриншота 5](img/14.04-05.png)
+Функция и дата её создания:
+commit 8c928e83589d90a031f811fae52a81be7153e82f
+Author: Martin Atkins <mart@degeneration.co.uk>
+Date:   Thu Apr 2 18:04:39 2020 -0700
+
+![Название скриншота 5](img/14.04-09.png)
 
 
 # Найдите все коммиты, в которых была изменена функция `globalPluginDirs`.
